@@ -1,0 +1,36 @@
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.main-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth color fade */
+}
+
+a:hover {
+  color: #999999; /* grey on hover */
+}
+
+a.active {
+  color: #999999; /* Same grey as hover */
+  pointer-events: none; /* Optional: disables clicking on current page */
+}
+
+.social-bar { 
+      list-style: none;
+    display: flex;
+    gap: 1.0rem;
+    align-items: center;
+    justify-content: center;
+}
