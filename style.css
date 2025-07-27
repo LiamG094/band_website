@@ -34,3 +34,6 @@ a.active {
     align-items: center;
     justify-content: center;
 }
+#photo {
+  border: solid black 
+}
