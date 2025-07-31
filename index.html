@@ -1,19 +1,18 @@
-<!-- Head sets up info about the page, none of which is displayed -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"> <!--default character set for HTML5 -->
+  <meta charset="UTF-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--helps keep mobile accessible-->
-  <title>Cottonmouth - Home</title> <!--THIS IS WHAT THE TITLE OF THE TAB WILL BE-->
+  <title>Cottonmouth - Home</title> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css"> <!--links to the style.css sheet (styling)-->
   <script src="script.js" defer></script> <!--links to the script.js sheet (functionality)-->
 </head>
 
-<!-- body is the visual side of things-->
 <body>
-    <!--banner-->
+<!--Banner - to be constant across all pages -->
 <header class="banner">
+
         <!--Menu bar-->
         <div class="banner-item" id="main-menu">
             <ul>
@@ -22,7 +21,8 @@
                 <a href="merch.html"><li>Merch</li></a>
             </ul>
         </div>
-    <a href="index.html"><img src="./images/logo.jpeg" class="banner-item" id="banner-logo"></a>
+  <!--Logo (also link to homepage)-->
+<a href="index.html" class="logo-container"><img src="./images/logo.jpeg" class="banner-item" id="banner-logo"></a>
  <!--Social bar-->   
 <div class="banner-item" id="social-bar">
   <a href="https://www.facebook.com/CottonmouthMetal/?locale=en_GB" target="_blank" rel="noopener" title="Facebook">
@@ -39,11 +39,18 @@
   </a>
 </div>
 </header>
-<!--container for site main page photo -->
-<div id="photo">
+
+<!--homepage container so that it can be style relatively-->
+<div class="homepage">
+
+  <div id="photo">
   <!--update link with filepath once photo is chosen-->
-  <img src="" alt="description of photo for accessibility purposes" />
+  <img src="./images/rock-city-backstage.jpeg" alt="description of photo for accessibility purposes" />
 </div>
+
+</div>
+
 <footer><p>&copy; 2025 Cottonmouth. All rights reserved.</p></footer>
+
 </body>
 </html>

@@ -1,17 +1,58 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*Styling for the header and all assocaited child elements*/
+
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: black;
-  color: white;
-  text-align: center;
+  border: solid white 2px;
+  box-sizing: border-box;
+  z-index: 1000;
 }
 
 .banner {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  overflow: hidden;
+}
+
+.logo-container {
+  flex: 5; /* increase from 3 to 5 to give more horizontal space */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#banner-logo {
+  height: 60px;      /* fixed height */
+  width: auto;       /* preserve aspect ratio */
+  max-width: none;   /* REMOVE this limit so it can grow freely */
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+#social-bar { 
+      list-style: none;
     display: flex;
+    gap: 1.0rem;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    overflow: hidden;
-    height: 80px; /* Set the height of the banner */
-    box-sizing: border-box;
+    justify-content: center;
 }
 
 #main-menu ul {
@@ -38,21 +79,25 @@ a.active {
   pointer-events: none; /* Optional: disables clicking on current page */
 }
 
-#social-bar { 
-      list-style: none;
-    display: flex;
-    gap: 1.0rem;
-    align-items: center;
-    justify-content: center;
+/*main body of the home page*/
+.homepage { 
+  flex: 1; 
+  padding-top: 80px; 
 }
 
-.banner-item {
-  border: solid white bold;
+.homepage > *:last-child {
+  margin-bottom: 0;
 }
-#banner-logo {
-    width: 10%; /* Adjust size as needed */
-    height: auto;
-    border-radius: 8px; /* Rounded corners */
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    cursor: pointer;
+
+
+
+/*footer styling*/ 
+
+footer {
+  margin: 0;
+  padding: 20px 0;
+  background-color: black;
+  color: white;
+  text-align: center;
 }
+
