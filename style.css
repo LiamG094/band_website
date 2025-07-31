@@ -3,7 +3,18 @@ header {
   color: white;
   text-align: center;
 }
-.main-menu ul {
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    overflow: hidden;
+    height: 80px; /* Set the height of the banner */
+    box-sizing: border-box;
+}
+
+#main-menu ul {
     list-style: none;
     display: flex;
     gap: 1.5rem;
@@ -27,13 +38,21 @@ a.active {
   pointer-events: none; /* Optional: disables clicking on current page */
 }
 
-.social-bar { 
+#social-bar { 
       list-style: none;
     display: flex;
     gap: 1.0rem;
     align-items: center;
     justify-content: center;
 }
-#photo {
-  border: solid black 
+
+.banner-item {
+  border: solid white bold;
+}
+#banner-logo {
+    width: 10%; /* Adjust size as needed */
+    height: auto;
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
 }
